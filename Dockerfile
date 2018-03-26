@@ -5,4 +5,4 @@ WORKDIR /go/github.com/IkezoeMakoto/docker-multi-stage-test
 
 RUN go build -o hello main.go
 
-ENTRYPOINT ["/usr/local/bin/hello"]
+ENTRYPOINT ["./hello"]
