@@ -2,7 +2,10 @@ version: "2"
 services:
   go-build:
     build: src
+    image: go-build
 
   app:
     build: .
-    depends_on: go-build
+    image: go-app
+    depends_on:
+      - go-build
